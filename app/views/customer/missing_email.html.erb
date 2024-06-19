@@ -1,0 +1,6 @@
+<div>
+<%= link_to 'Home Page', root_path %><br>
+  <% @customers.each do |customer| %>
+    <%= render partial: 'customer', locals: { customer: customer } %>
+  <% end %>
+</div>
